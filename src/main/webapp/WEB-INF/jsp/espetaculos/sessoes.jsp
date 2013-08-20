@@ -19,6 +19,9 @@
 				<option value="DIARIA">Diária</option>		
 				<option value="SEMANAL">Semanal</option>			
 			</select>
+			
+			<label for=cria></label>
+			<input type="submit" id="cria" value="Criar"/>
 		</form>
 	
 	</body>
