@@ -103,15 +103,15 @@ public class Espetaculo {
 	public boolean Vagas(int qtd, int min)
     {
         // ALUNO: Não apague esse metodo. Esse sim será usado no futuro! ;)
-        int totDisp = 0;
+        int totalDisponivel = 0;
 
         for (Sessao s : sessoes)
         {
             if (s.getIngressosDisponiveis() < min) return false;
-            totDisp += s.getIngressosDisponiveis();
+            totalDisponivel += s.getIngressosDisponiveis();
         }
 
-        if (totDisp >= qtd) return true;
+        if (totalDisponivel >= qtd) return true;
         else return false;
     }
 
